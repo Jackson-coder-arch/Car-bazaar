@@ -1,20 +1,39 @@
-nav ul{
-    margin:0;
-    padding:0;
-    text-decoration-color: black;
+
+
+ul {
+  list-style-type: none;
+  margin: 1px;
+  padding: 1px;
+  overflow: hidden;
+  background-color: #b6b0bd;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    padding: 70px;
+    text-decoration: none;
 }
-nav ul li{
-display: inline-block;
-list-style-type:none;
+li {
+  float: left;
 }
-nav > ul > li > a{
-text-decoration:none;
-line-height:2em;
-padding:0.5em 0.5em;
+
+/* Links will change color when hovered over */
+li a:hover {
+    background-color: #7300ff;
 }
-#logo{
-    padding-top: 0%;
-    padding-left:50%
+#logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+  /* float:left; */
 }
 header .img .section1{
     background-image: url("/home/jack/Downloads/Toyota BusinessPlus - Our Range _ Toyota Motor Europe_files/logo.jpg");
@@ -23,4 +42,34 @@ header .img .section1{
 }
 body {
     background-image: url("/home/jack/Downloads/Car world.jpg");
+}
+.section1{
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    background-image: url(./images/Car\ world.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 2000px;
+}
+
+h1{
+  color:white;
+  padding-top:130px ;
+
+}
+.heads{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+}
+li h3{
+  text-decoration: none;
+  text-align: right;
+  display: inline-block;
+  padding-right: 150px;
+  position:center;
+  float:right ;
 }
