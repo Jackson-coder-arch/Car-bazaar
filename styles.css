@@ -5,16 +5,17 @@ ul {
   margin: 1px;
   padding: 1px;
   overflow: hidden;
-  background-color: #b6b0bd;
+  background-color: #f7f4fa;
   }
   
   li {
     float: left;
+
   }
   
   li a {
     display: block;
-    color: white;
+    color:black;
     padding: 70px;
     text-decoration: none;
 }
@@ -71,5 +72,23 @@ li h3{
   display: inline-block;
   padding-right: 150px;
   position:center;
-  float:right ;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+/* .images {
+  height: 417px;
+  width:626px ;
+
+} */
