@@ -1,13 +1,29 @@
-
-
-ul {
+/* ul {
   list-style-type: none;
   margin:1px;
   padding: 1px;
   overflow: hidden;
   background-color: #f7f4fa;
+  } */
+  *{
+    overflow-x: hidden;
   }
-  
+  nav {
+    background-color:#f7f4fa;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li:not(:first-child) {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
   li {
     float: left;
     text-align: justify;
@@ -16,7 +32,7 @@ ul {
   li a {
     display: inline-block;
     color:black;
-    padding: 70px;
+    padding: 30px;
     text-decoration: none;
     
 }
@@ -31,10 +47,10 @@ li a:hover {
 #logo {
   display: inline-block;
   vertical-align: top;
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-  margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+  width: 3.2em;
+  height: 1.8em;
+  padding: 0px;
+  margin: 0px;    /* if you want it vertically middle of the navbar. */
   /* float:left; */
 }
 header .img .section1{
@@ -58,22 +74,26 @@ body {
 
 h1{
   color:white;
-  padding-top:130px ;
+  padding:40px;
 
 }
-.heads{
+.heads {
   color: white;
   text-decoration: none;
   text-align: center;
+  list-style-type: none;
+  
 
 }
 li h3{
-  text-decoration: none;
-  text-align: right;
   display: inline-block;
-  padding-right: 150px;
+  padding: 90px;
   position:center;
 }
+.heads li h3:hover{
+background-color:grey;
+}
+
 
 * {
   box-sizing: border-box;
@@ -81,15 +101,21 @@ li h3{
 
 .row {
   display: flex;
+  /* justify-content: space-around; */
 }
-
+.col-title{
+  text-align: center;
+}
 /* Create three equal columns that sits next to each other */
 .column {
   flex: 33.33%;
-  padding: 5px;
+  padding: 5em;
+  padding-top: 2em;
 }
-/* .images {
-  height: 417px;
-  width:626px ;
+.images {
+  /* height: 100%;
+  width:100% ; */
+  /* justify-content: space-around; */
+ 
 
-} */
+}
